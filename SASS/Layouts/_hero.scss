@@ -7,30 +7,58 @@
         url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    background-size: 1600px;
-    max-width: 1600px;
-    height: 600px;
+    background-size: cover;
+    // background-size: 480px;
+    max-width: 480px;
+    height: 400px;
     margin: 0 auto;
 
+@media screen and (max-width: 767px) {
+        width: 100%;
+        padding-top: 118px;
+    }
+
+    @media screen and (min-width: 768px) {
+            max-width: 768px;
+            height: 400px;
+            padding-top: 118px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            height: 600px;
+            padding-top: 200px;
+            background-size: 1600px;
+            
+        }
     
 }
 
 
 .hero__title {
-    font-size: 44px;
+    font-size: 24px;
     line-height: 1.3636;
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-color-white);
-
+max-width: 360px;
     margin-bottom: 30px;
-    width: 696px;
+    
 
     margin-left: auto;
     margin-right: auto;
-    color: brown;
+    
+@media screen and (min-width: 768px) {
+        max-width: 100%;
+        font-size: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+        }
+
 }
 
 /* кнопка */

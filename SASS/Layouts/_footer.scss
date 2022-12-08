@@ -2,6 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--dark-background-color);
+    background-position: contain;
 
     &__contacts:focus,
     &__contacts:hover,
@@ -18,8 +19,17 @@
 
 .footer__flex {
     display: flex;
-    gap: 70px;
-    align-items: baseline;
+    
+    align-items: center;
+
+    gap: 60px;
+
+    @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
 }
 
 .footer__logo {
@@ -39,8 +49,18 @@
     &-color {
             color: var(--accent-color);
             }
+
+            align-items: center;
 }
 
+.footer__logo-container {
+        @media screen and (max-width: 1199px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+            }
+}
 
 .footer__address, .footer__contacts {
     font-style: normal;
@@ -55,6 +75,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+    
 }
 
 .footer__contacts {
@@ -64,6 +85,13 @@
 .footer__contact-list {
     padding-left: 0px;
     margin-top: 0px;
+
+    @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
 }
 
 .footer__contacts {
@@ -72,7 +100,7 @@
 
 
 .footer__list-item:not(:last-child) {
-    margin-bottom: 9px;
+margin-bottom: 12px; 
 }
 
 
@@ -88,7 +116,14 @@
 }
 
 
-
+.footer__soc-links-container {
+    @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+}
 
 .footer__soc-link {
     display: inline-block;
@@ -128,6 +163,13 @@
 .footer__form-wrap {
     position: relative;
     margin-left: auto;
+
+    @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
 }
 
 
@@ -165,10 +207,22 @@
     &:focus {
             border: 1px solid var(--accent-color);
         }
+
+                @media screen and (max-width: 1199px) {
+                    margin-bottom: 20px;
+                    
+                }
 }
 
 .input__wrap {
     display: flex;
+
+    @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
 }
 
 
