@@ -2,7 +2,7 @@
 
 .benefits__icon {
     height: 120px;
-    width: 270px;
+    width: 100%;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: var(--team-section-background);
@@ -19,6 +19,12 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+
+
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .benefits__padding {
@@ -27,20 +33,36 @@
 }
 
 .benefits__list {
-    display: flex;
+    
     justify-content: center;
     align-items: normal;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            
+            gap: 30px;
+        }
 }
 
 .benefits__list-item {
     align-items: center;
-    width: calc((100% - 90px) / 4);
+
+    // @media screen and (min-width: 768px) {
+    //         width: calc((100% - 30px) / 2);
+    //     }
+    
 }
 
 .benefits__text {
+    
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
+
+   
+
+        margin-bottom: 30px;
 }
