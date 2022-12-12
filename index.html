@@ -55,63 +55,68 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open" data-menu-open>
+        <svg class="menu-open__icon">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+            </button>
       </div>
 
       <!-- мобменю -->
 
-      <button type="button" class="menu-open">
-        <svg class="menu-open__icon">
-          <use href="./images/symbol-defs.svg#icon-menu"></use>
-        </svg>
-    
-        </button>
-        <dib class="mob-menu">
-          <button type="button" class="menu-close">
-            <svg class="menu-close__icon">
-              <use href="./images/symbol-defs.svg#icon-close"></use>
-            </svg>
-          </button>
-  
-          <nav>
-            <ul class="mob-menu__nav">
-              <li class="mob-menu__nav-item">
-                <a href="index.html" class="mob-menu__current">Студія</a>
+
+        <div class="mob-menu visually-hidden" data-menu>
+          
+            <button type="button" class="menu-close" data-menu-close>
+                <svg class="menu-close__icon">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+          
+            </button>
+            
+        <div class="mob-menu-container" >
+            <div class="mob-menu__top">
+              <nav>
+                <ul class="mob-menu__nav">
+                  <li class="mob-menu__nav-item">
+                    <a href="index.html" class="mob-menu__current">Студія</a>
+                  </li>
+                  <li class="mob-menu__nav-item">
+                    <a href="portfolio.html" class="mob-menu__link">Портфоліо</a>
+                  </li>
+                  <li class="mob__nav-item">
+                    <a href="/contacts" class="mob-menu__link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu__contact">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu__contacts-link"
+                >
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="mob-menu__nav-item">
-                <a href="portfolio.html" class="mob-menu__link">Портфоліо</a>
-              </li>
-              <li class="mob__nav-item">
-                <a href="/contacts" class="mob-menu__link">Контакти</a>
+              <li>
+                <a
+                  href="tel:+380961111111"
+                  class="mob-menu__contacts-link mob-menu__email"
+                >
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-    
-
-        <div class="mob-menu-bottom">
-          <ul class="mob-menu__contact">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="mob-menu__contacts-link"
-              >
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a
-                href="tel:+380961111111"
-                class="mob-menu__contacts-link mob-menu__email"
-              >
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="mob-menu__soc-list">
-            <li class="mob-menu__soc-list-item">Instagram</li>
-            <li class="mob-menu__soc-list-item">Twitter</li>
-            <li class="mob-menu__soc-list-item">Facebook</li>
-            <li class="mob-menu__soc-list-item">LinkedIn</li>
-          </ul>
+            <ul class="mob-menu__soc-list">
+              <li class="mob-menu__soc-list-item"><a href="" class="mob-menu__soc-link">Instagram</ф></li>
+              <li class="mob-menu__soc-list-item"><a href="" class="mob-menu__soc-link">Twitter</a></li>
+              <li class="mob-menu__soc-list-item"><a href="" class="mob-menu__soc-link">Facebook</a></li>
+              <li class="mob-menu__soc-list-item"><a href="" class="mob-menu__soc-link">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -674,5 +679,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

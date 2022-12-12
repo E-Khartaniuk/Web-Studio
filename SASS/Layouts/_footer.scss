@@ -208,9 +208,15 @@ margin-bottom: 12px;
             border: 1px solid var(--accent-color);
         }
 
+@media screen and (max-width: 479px) {
+    margin-bottom: 20px;
+width: 290px;
+padding-left: 0px;
+}
+
                 @media screen and (max-width: 1199px) {
                     margin-bottom: 20px;
-                    
+                    margin-right: 0;
                 }
 }
 
