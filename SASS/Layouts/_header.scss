@@ -38,9 +38,11 @@
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+
     padding-top: 24px;
-    padding-bottom: 25px;
+        padding-bottom: 25px;
+    color: var(--primary-text-color);
+    
 
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,13 +57,6 @@
 
 
 
-
-.header__nav {
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
-}
-
 .header__current {
     position: relative;
     text-decoration: none;
@@ -70,30 +65,31 @@
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
     &::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 4px;
-            left: 0px;
-            top: 45px;
-    
-            background: var(--accent-color);
-            border-radius: 2px;
-        }
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        left: 0px;
+        top: 45px;
+
+        background: var(--accent-color);
+        border-radius: 2px;
+    }
 }
 
-// .current::after {
-//     position: absolute;
-//     content: "";
-//     width: 100%;
-//     height: 4px;
-//     left: 0px;
-//     top: 45px;
 
-//     background: var(--accent-color);
-//     border-radius: 2px;
-// }
+
+.header__nav {
+    display: none;
+    gap: 50px;
+    margin-left: 93px;
+
+@media screen and (min-width: 768px) {
+    display: flex;    
+}
+}
 
 .header__contacts-link {
     text-decoration: none;
@@ -116,13 +112,15 @@
         }
 }
 
-
-
 .header__contact {
-    display: flex;
+    display: none;
     gap: 30px;
     margin-left: auto;
     align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+        }
 }
 
 .header__icon {
@@ -130,4 +128,134 @@
     align-items: baseline;
     display: inline-block;
     fill: currentColor;
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--text-color-white);
+
+    padding-left: 40px;
+    // display: none;
+}
+
+.menu-close {
+    position: absolute;
+    right: 100px;
+    background: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.menu-open {
+    position: absolute;
+    background: transparent;
+    border: none;
+    
+  
+}
+
+.menu-open__icon {
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    padding: 12px 8px;
+}
+
+.menu-close__icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.mob-menu__soc-list {
+    display: flex;
+}
+
+.mob-menu__soc-list-item {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+.mob-menu__contact {
+    margin-left: auto;
+    align-items: baseline;
+    margin-bottom: 64px;
+}
+
+.mob-menu__contacts-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-menu__email {
+    font-size: 24px;
+    margin-top: 32px;
+}
+
+.mob-menu__nav {
+    gap: 50px;
+
+}
+
+.mob-menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--primary-text-color);
+
+
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-menu__nav-item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-menu__current {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
 }

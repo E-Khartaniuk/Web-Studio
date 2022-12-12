@@ -2,16 +2,33 @@
 /* фільтр */
 
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
+    padding-top: 60px;
+        padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
 }
 
 .filter-buttons {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 15px;
 
     margin-bottom: 50px;
+    width: 90%;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+            gap: 8px;
+            margin-bottom: 50px;
+        }
 }
 
 .filter-buttons__item {
@@ -42,16 +59,40 @@
     }
 }
 
-.portfolio__item {
-    &:hover .portfolio__overlay {
-        transform: translateY(0%);
-    }
 
-    &:focus .portfolio__overlay {
-        transform: translateY(0%);
-    }
 
+
+
+.portfolio__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+      @media screen and (min-width: 768px) {
+        justify-content: normal;
+      }  
+
+   @media screen and (min-width: 1200px) {
+       justify-content: center;
+   }
 }
+
+.portfolio__card {
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        width: calc(100% - 30px) / 2;
+    }
+}
+
+.portfolio__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 
 /* оверлей анімація */
 
@@ -86,12 +127,7 @@
 
 
 
-.portfolio__list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
+
 
 .portfolio__item {
     display: block;
@@ -110,7 +146,14 @@
             padding-bottom: 20px;
             padding-left: 24px;
             padding-right: 24px;
+
+            width: 100%;
+
+            // @media screen and (min-width: 768px) {
+            //         width: 354px;
+            //         }
         }
+
 
 &:hover,
 &:focus {
@@ -119,11 +162,19 @@
     }
 }
 
+.portfolio__item {
+    &:hover .portfolio__overlay {
+        transform: translateY(0%);
+    }
 
+    &:focus .portfolio__overlay {
+        transform: translateY(0%);
+    }
 
-.portfolio__img {
-    display: block;
 }
+
+
+
 
 
 .portfolio__project {
