@@ -287,6 +287,15 @@ ul {
   }
 }
 
+.mob-cont {
+  padding-top: 10px;
+}
+@media screen and (min-width: 480px) {
+  .mob-cont {
+    padding-left: 15px;
+  }
+}
+
 .mob-menu__top {
   display: block;
 }
@@ -505,7 +514,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     background-size: 1600px;

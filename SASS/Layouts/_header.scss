@@ -176,8 +176,16 @@
     overflow: auto;
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
-       width: 480px;
+    width: 480px;
     }
+}
+
+.mob-cont {
+    padding-top: 10px;
+
+    @media screen and (min-width: 480px) {
+            padding-left: 15px;
+        }
 }
 
 .mob-menu__top {
