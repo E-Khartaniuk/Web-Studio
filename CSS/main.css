@@ -277,7 +277,7 @@ ul {
           justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 10px 15px 48px 40px;
+  padding-bottom: 48px;
   z-index: 999;
   overflow: auto;
 }
@@ -289,7 +289,6 @@ ul {
 
 .mob-menu__top {
   display: block;
-  padding-top: 48px;
 }
 
 .mob-menu-bottom {
@@ -300,7 +299,6 @@ ul {
 .menu-close {
   display: block;
   margin-left: auto;
-  margin-bottom: 10px;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -312,6 +310,7 @@ ul {
 .menu-open {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 .menu-open:focus, .menu-open:hover {
   fill: var(--accent-color);
