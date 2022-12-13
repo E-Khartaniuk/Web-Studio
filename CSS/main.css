@@ -278,6 +278,7 @@ ul {
   width: 100%;
   height: 100%;
   padding-bottom: 48px;
+  padding-top: 48px;
   z-index: 999;
   overflow: auto;
 }
@@ -287,28 +288,12 @@ ul {
   }
 }
 
-.mob-cont {
-  padding-top: 10px;
-}
-@media screen and (min-width: 480px) {
-  .mob-cont {
-    padding-left: 15px;
-  }
-}
-
-.mob-menu__top {
-  display: block;
-}
-
-.mob-menu-bottom {
-  display: block;
-  padding-bottom: 48px;
-}
-
 .menu-close {
   display: block;
-  margin-left: auto;
   cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
   background: transparent;
   border: none;
 }
@@ -469,6 +454,10 @@ ul {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero {
