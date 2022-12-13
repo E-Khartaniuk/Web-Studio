@@ -257,6 +257,7 @@ ul {
   height: 100vh;
   background-color: var(--text-color-white);
   padding-left: 40px;
+  z-index: 5;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -378,7 +379,7 @@ ul {
 .mob-menu__contacts-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -402,7 +403,7 @@ ul {
 }
 @media screen and (max-width: 479px) {
   .mob-menu__contacts-link {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -852,8 +853,14 @@ ul {
 
 .regular-clients {
   background-color: var(--text-color-white);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .regular-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .regular-clients__title {
