@@ -19,8 +19,8 @@
 
 .footer__flex {
     display: flex;
-    
-    align-items: center;
+    justify-content: center;
+    align-items: baseline;
 
     gap: 60px;
 
@@ -29,6 +29,46 @@
             flex-direction: column;
             align-items: center;
     
+        }
+}
+
+.footer__container {
+@media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+.footer__contact-wrap {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+
+
+        
+
+@media screen and (max-width: 767px) {
+        margin-bottom: 60px;;
+    }
+
+        @media screen and (min-width: 1200px) {
+                display: block;
+                    margin-right: 60px;
+            }
+}
+
+.footer__soc-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 1200px) {
+            display: block;
         }
 }
 
@@ -53,14 +93,14 @@
             align-items: center;
 }
 
-.footer__logo-container {
-        @media screen and (max-width: 1199px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+// .footer__logo-container {
+//         @media screen and (max-width: 1199px) {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
         
-            }
-}
+//             }
+// }
 
 .footer__address, .footer__contacts {
     font-style: normal;
@@ -162,7 +202,7 @@ margin-bottom: 12px;
 
 .footer__form-wrap {
     position: relative;
-    margin-left: auto;
+    // margin-left: auto;
 
     @media screen and (max-width: 1199px) {
             display: flex;
@@ -208,16 +248,20 @@ margin-bottom: 12px;
             border: 1px solid var(--accent-color);
         }
 
-@media screen and (max-width: 479px) {
-    margin-bottom: 20px;
-width: 290px;
-padding-left: 0px;
+        @media screen and (max-width: 479px) {
+            margin-bottom: 20px;
+        width: 290px;
+        padding-left: 0px;
 }
 
-                @media screen and (max-width: 1199px) {
-                    margin-bottom: 20px;
-                    margin-right: 0;
-                }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+}
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 
 .input__wrap {
